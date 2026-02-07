@@ -410,9 +410,9 @@
         </div>
       </div>
       <div class="hero-contact">
-        <a href="/cdn-cgi/l/email-protection#1d7e756873757c78645d706e6833787968">
+        <a href="#" onclick="window.location.href='mai'+'lto:'+'chunhaey'+'@'+'msu.edu';return false;">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-          <span class="__cf_email__" data-cfemail="f89b908d9690999d81b8958b8dd69d9c8d">[email&#160;protected]</span>
+          <span class="em-addr"></span>
         </a>
         <a href="tel:+15172907433">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -471,7 +471,7 @@
         </div>
         <div class="info-card">
           <div class="info-label" data-en="Email" data-ko="이메일">Email</div>
-          <div class="info-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="aac9c2dfc4c2cbcfd3eac7d9df84cfcedf">[email&#160;protected]</a></div>
+          <div class="info-value"><span class="em-addr"></span></div>
         </div>
       </div>
     </div>
@@ -841,7 +841,7 @@
   <div class="footer-inner">
     <div class="footer-name">Haeyong Chun</div>
     <div class="footer-links">
-      <a href="/cdn-cgi/l/email-protection#55363d203b3d34302c153826207b303120">Email</a>
+      <a href="#" class="footer-email-link">Email</a>
       <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
       <a href="https://www.researchgate.net" target="_blank">ResearchGate</a>
     </div>
@@ -854,7 +854,7 @@
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
 </button>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 const nav = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 50);
@@ -894,6 +894,16 @@ function toggleLang() {
     el.textContent = el.getAttribute('data-' + currentLang);
   });
 }
+// Email anti-obfuscation
+document.addEventListener('DOMContentLoaded', function() {
+  var u = 'chunhaey'; var d = 'msu.edu';
+  var full = u + '@' + d;
+  document.querySelectorAll('.em-addr').forEach(function(el) {
+    el.textContent = full;
+  });
+  var fLink = document.querySelector('.footer-email-link');
+  if (fLink) { fLink.href = 'mai' + 'lto:' + full; }
+});
 </script>
 
 </body>
