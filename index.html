@@ -7,17 +7,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --ink: #111111;
+    --ink: #1a1614;
     --paper: #fafafa;
-    --accent: #000000;
+    --accent: #1a1814;
     --accent-light: #333333;
     --muted: #777777;
     --border: #e0e0e0;
     --card-bg: #ffffff;
     --section-alt: #f3f3f3;
-    --gradient-start: #0a0a0a;
+    --gradient-start: #c9bdb0;
     --gradient-mid: #1a1a1a;
-    --gradient-end: #2a2a2a;
+    --gradient-end: #c9bdb0;
     --hover-lift: 0 8px 30px rgba(0,0,0,0.12);
   }
 
@@ -92,8 +92,8 @@
   /* ── HERO ── */
   .hero, section.hero, section#hero {
     min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden;
-    background: #141414 !important;
-    background-color: #141414 !important;
+    background: #c9bdb0 !important;
+    background-color: #c9bdb0 !important;
   }
   .hero::before {
     content: ''; position: absolute; inset: 0;
@@ -106,25 +106,25 @@
   }
   .hero-text h1 {
     font-family: 'Cormorant Garamond', serif; font-size: clamp(2.8rem, 5vw, 4.2rem);
-    font-weight: 700; color: #ffffff; line-height: 1.1; margin-bottom: 0.6rem;
+    font-weight: 700; color: #2a1f1a; line-height: 1.1; margin-bottom: 0.6rem;
     letter-spacing: -0.03em;
   }
   .hero-text .subtitle {
-    font-size: 1.05rem; color: rgba(255,255,255,0.6); margin-bottom: 1.8rem;
+    font-size: 1.05rem; color: rgba(42,31,26,0.7); margin-bottom: 1.8rem;
     font-weight: 300; letter-spacing: 0.01em; line-height: 1.6;
   }
   .hero-text .affiliation {
     font-family: 'JetBrains Mono', monospace; font-size: 0.78rem;
-    color: rgba(255,255,255,0.4); letter-spacing: 0.08em; text-transform: uppercase;
+    color: rgba(42,31,26,0.5); letter-spacing: 0.08em; text-transform: uppercase;
     margin-bottom: 2rem;
   }
   .hero-stats { display: flex; gap: 2.5rem; margin-top: 2rem; }
   .hero-stat { text-align: left; }
   .hero-stat .num {
-    font-family: 'Cormorant Garamond', serif; font-size: 2.4rem; font-weight: 700; color: #fff;
+    font-family: 'Cormorant Garamond', serif; font-size: 2.4rem; font-weight: 700; color: #2a1f1a;
   }
   .hero-stat .label {
-    font-size: 0.72rem; color: rgba(255,255,255,0.45); text-transform: uppercase;
+    font-size: 0.72rem; color: rgba(42,31,26,0.5); text-transform: uppercase;
     letter-spacing: 0.1em; font-weight: 500;
   }
   .hero-photo-wrapper { display: flex; justify-content: center; }
@@ -139,27 +139,27 @@
   .hero-photo:hover img { filter: grayscale(0%); }
   .hero-photo::after {
     content: ''; position: absolute; inset: 0;
-    border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; pointer-events: none;
+    border: 1px solid rgba(42,31,26,0.1); border-radius: 12px; pointer-events: none;
   }
   .hero-contact { display: flex; gap: 1.5rem; margin-top: 1.5rem; flex-wrap: wrap; }
   .hero-contact a {
     display: flex; align-items: center; gap: 0.5rem;
-    color: rgba(255,255,255,0.55); text-decoration: none; font-size: 0.82rem;
+    color: rgba(42,31,26,0.65); text-decoration: none; font-size: 0.82rem;
     transition: color 0.3s; font-weight: 400;
   }
-  .hero-contact a:hover { color: #fff; }
+  .hero-contact a:hover { color: #2a1f1a; }
   .hero-contact svg { width: 16px; height: 16px; opacity: 0.6; }
 
   .hero-buttons { margin-top: 1.2rem; }
   .btn-cv {
     display: inline-flex; align-items: center; gap: 0.5rem;
-    padding: 0.65rem 1.6rem; border: 1px solid rgba(255,255,255,0.3);
-    border-radius: 6px; color: #fff; text-decoration: none;
+    padding: 0.65rem 1.6rem; border: 1px solid rgba(42,31,26,0.3);
+    border-radius: 6px; color: #2a1f1a; text-decoration: none;
     font-size: 0.82rem; font-weight: 500; letter-spacing: 0.03em;
-    transition: all 0.3s; background: rgba(255,255,255,0.06);
+    transition: all 0.3s; background: rgba(42,31,26,0.06);
   }
   .btn-cv:hover {
-    background: rgba(255,255,255,0.15); border-color: rgba(255,255,255,0.5);
+    background: rgba(42,31,26,0.12); border-color: rgba(42,31,26,0.4);
     transform: translateY(-2px);
   }
   .btn-cv svg { width: 16px; height: 16px; }
@@ -175,7 +175,7 @@
   /* ── SECTIONS ── */
   section { padding: 5rem 2rem; }
   section:nth-child(even):not(.hero):not(#hero) { background: var(--section-alt); }
-  section.hero { background: #141414 !important; }
+  section.hero { background: #c9bdb0 !important; }
   .section-inner { max-width: 1000px; margin: 0 auto; }
   .section-header { margin-bottom: 3rem; position: relative; }
   .section-label {
@@ -334,17 +334,17 @@
 
   /* ── FOOTER ── */
   footer {
-    background: var(--gradient-start); color: rgba(255,255,255,0.5); padding: 3rem 2rem; text-align: center;
+    background: var(--gradient-start); color: rgba(42,31,26,0.6); padding: 3rem 2rem; text-align: center;
   }
   footer .footer-inner { max-width: 1000px; margin: 0 auto; }
   footer .footer-name {
-    font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: #fff;
+    font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: #2a1f1a;
     font-weight: 700; margin-bottom: 0.5rem;
   }
   footer .footer-links { display: flex; justify-content: center; gap: 1.5rem; margin: 1rem 0; }
-  footer .footer-links a { color: rgba(255,255,255,0.4); text-decoration: none; font-size: 0.82rem; transition: color 0.3s; }
-  footer .footer-links a:hover { color: #fff; }
-  footer .copyright { font-size: 0.72rem; color: rgba(255,255,255,0.25); margin-top: 1.5rem; }
+  footer .footer-links a { color: rgba(42,31,26,0.55); text-decoration: none; font-size: 0.82rem; transition: color 0.3s; }
+  footer .footer-links a:hover { color: #2a1f1a; }
+  footer .copyright { font-size: 0.72rem; color: rgba(42,31,26,0.4); margin-top: 1.5rem; }
 
   /* ── ANIMATION ── */
   .reveal {
@@ -389,7 +389,7 @@
 </nav>
 
 <!-- HERO -->
-<section class="hero" id="hero" style="background:#141414 !important; background-color:#000000 !important;">
+<section class="hero" id="hero" style="background:#c9bdb0 !important; background-color:#c9bdb0 !important;">
   <div class="hero-grid">
     <div class="hero-text">
       <div class="affiliation" data-en="Michigan State University · Department of Kinesiology" data-ko="미시간 주립대학교 · 운동과학과">Michigan State University · Department of Kinesiology</div>
