@@ -90,6 +90,9 @@
   .back-to-top{right:18px;bottom:18px;width:42px;height:42px}
 }
 
+
+
+/* Formspree AJAX integration */
 .hp-field{
   position:absolute!important;
   left:-9999px!important;
@@ -98,13 +101,30 @@
   opacity:0!important;
   pointer-events:none!important;
 }
-.send-btn:disabled{
-  opacity:.65;
-  cursor:not-allowed;
-  transform:none;
+.fs-feedback{margin-top:12px}
+.fs-field-error{
+  display:block;
+  min-height:16px;
+  margin-top:4px;
+  font-size:.64rem;
+  color:#B42318;
 }
-.form-status.success{color:#18794E}
-.form-status.error{color:#B42318}
+.form-status{
+  display:none;
+  min-height:18px;
+  font-size:.68rem;
+}
+.form-status.fs-success{color:#18794E}
+.form-status.fs-error{color:#B42318}
+.form-status:not(:empty){display:block}
+.send-loading{display:none}
+.send-btn:disabled{
+  opacity:.68;
+  cursor:not-allowed;
+  transform:none!important;
+}
+.send-btn:disabled .send-idle{display:none}
+.send-btn:disabled .send-loading{display:inline}
 </style></head><body>
 <nav class="site-nav" id="siteNav"><div class="nav-inner"><a class="brand" href="#top">Haeyong Chun</a><div class="lang-switch"><button class="active" id="langEn" type="button">EN</button><span class="lang-divider">|</span><button id="langKo" type="button">한국어</button></div></div></nav>
 <header class="hero" id="top"><div class="hero-grid"><div class="hero-copy reveal"><div class="hero-topline"><span data-en="Academic portfolio · 2026" data-ko="Academic Portfolio · 2026">Academic portfolio · 2026</span></div><h1>HAEYONG<br/>CHUN</h1><div class="hero-role" data-en="Research Assistant Professor · Chungnam National University" data-ko="학술연구교수 · 충남대학교">Research Assistant Professor · <span>Chungnam National University</span></div><p class="hero-intro" data-en="Psychometrics, physical activity, behavioral intervention, and AI-enabled computational methods." data-ko="심리측정, 신체활동, 행동중재, 그리고 AI 기반 전산 연구방법론을 중심으로 연구합니다.">Psychometrics, physical activity, behavioral intervention, and AI-enabled computational methods.</p><div class="hero-links hero-section-links">
@@ -129,12 +149,20 @@
 </div>
 </div></section>
 <section class="main-grid" id="recognition"><aside class="side-index"><div class="side-index-inner"><div class="num">05</div><div><div class="label" data-en="Recognition" data-ko="학술 활동">Recognition</div><p data-en="Presentations, awards, and grant support." data-ko="학술 발표, 수상, 연구비 지원.">Presentations, awards, and grant support.</p></div></div></aside><div class="content"><h2 class="section-title reveal" data-en="Academic activity" data-ko="학술 활동">Academic activity</h2><div class="split-sections"><section><div class="micro-label" data-en="Presentations" data-ko="학술 발표">Presentations</div><article class="list-row reveal"><div class="list-date">2026 MAR</div><div><h4>Psychological Mechanisms of Within-Session Persistence in Digital Health Interventions: Evidence from Large-Scale Behavioral Logs</h4><p>Chun, H. , Kim, H., &amp; Park, Y.</p><small>AASP Eastern Canada Sport and Exercise Psychology Symposium (Oral Presentation)</small></div></article><article class="list-row reveal"><div class="list-date">2026 MAR</div><div><h4>Determining the Dimensionality of Physical Activity Self-Efficacy (PASE): A Monte Carlo Evaluation of Factor Enumeration with Ordinal-ESEM</h4><p>Chun, H. , Meyers, N., Malete, L., Lee, S., &amp; Pacewicz, C.</p><small>AASP Midwest Sport and Exercise Psychology Symposium</small></div></article><article class="list-row reveal"><div class="list-date">JUN 2025</div><div><h4>Two-dimensional latent physical activity self-efficacy and its relationships with physical activity: A secondary data analysis</h4><p>Chun, H. , Myers, N.D., Pacewicz, C.E., Malete, L., Prilleltensky, I., &amp; Lee, S.</p><small>NASPSPA, Lake Tahoe, NV, USA</small></div></article><article class="list-row reveal"><div class="list-date">JUN 2024</div><div><h4>Factor analysis with ordered categorical indicators and measurement of self-efficacy in physical activity contexts</h4><p>Myers, N.D., Pacewicz, C.E., Hill, C.R., &amp; Chun, H.</p><small>NASPSPA, New Orleans, LA, USA</small></div></article><article class="list-row reveal"><div class="list-date">JUN 2024</div><div><h4>Development and initial validation of the emotional regulation questionnaire in Korean Athletes</h4><p>Chun, H. , Park, S., Yun, D., &amp; Myers, N.D.</p><small>NASPSPA, New Orleans, LA, USA</small></div></article><article class="list-row reveal"><div class="list-date">JUN 2023</div><div><h4>Initial validity evidence for responses to the newly developed well-being actions self-efficacy scale</h4><p>Myers, N.D., Lee, S., Bateman, A.G., Wekesser, M., Prilleltensky, I., McMahon, A., Brincks, A.M., &amp; Chun, H.</p><small>NASPSPA, Toronto, Ontario, Canada</small></div></article><article class="list-row reveal"><div class="list-date">JUN 2019</div><div><h4>Cognitive Performance as a Mediator of the Relationship Between Aerobic Fitness and Academic Achievement</h4><p>Park, S.Y., Yun, D.H., Chun, H. , &amp; Etnier, J.L.</p><small>NASPSPA, Baltimore, MD, USA</small></div></article><article class="list-row reveal"><div class="list-date">JUN 2018</div><div><h4>Depression, Stress, Health-related Quality of Life and Physical Activity: The Korean National Health and Nutrition Examination Survey</h4><p>Park, S.Y., Chun, H. , Yun, D.H., &amp; Seo, G.R.</p><small>ASPASP 8th International Congress, Daegu, South Korea</small></div></article></section><section><section class="recognition-block"><div class="micro-label" data-en="Awards" data-ko="수상">Awards</div><article class="list-row reveal"><div class="list-date">2023</div><div><h4 data-en="Janet A. Wessel Award in Adapted Physical Activity" data-ko="Janet A. Wessel Award in Adapted Physical Activity">Janet A. Wessel Award in Adapted Physical Activity</h4><p data-en="Kinesiology, MSU" data-ko="운동과학과, MSU">Kinesiology, MSU</p></div></article><article class="list-row reveal"><div class="list-date">2021</div><div><h4 data-en="Outstanding Graduate Thesis Presentation" data-ko="우수 대학원 논문 발표상">Outstanding Graduate Thesis Presentation</h4><p data-en="Winter Conference, KSSP" data-ko="동계학술대회, 한국스포츠심리학회">Winter Conference, KSSP</p></div></article><article class="list-row reveal"><div class="list-date">2018</div><div><h4 data-en="Outstanding Trainee, Sport Big-data Courses" data-ko="우수 수료생, 스포츠 빅데이터 과정">Outstanding Trainee, Sport Big-data Courses</h4><p data-en="Korea Sports Promotion Foundation (KSPO)" data-ko="국민체육진흥공단">Korea Sports Promotion Foundation (KSPO)</p></div></article></section><section class="recognition-block"><div class="micro-label" data-en="Research Grants" data-ko="연구비">Research Grants</div><article class="list-row reveal"><div class="list-date">2026–2031</div><div><h4 data-en="Principal Investigator · National Research Foundation of Korea (NRF)" data-ko="책임연구원 · 한국연구재단(NRF)">Principal Investigator · National Research Foundation of Korea (NRF)</h4><p data-en="Development and Evaluation of a Mechanism-Based, Personalized JITAI Coaching System for Physical Activity Maintenance in Adults with Overweight and Obesity" data-ko="과체중 및 비만 성인의 신체활동 유지를 위한 기전 기반 개인 맞춤형 JITAI 코칭 시스템 개발 및 평가">Development and Evaluation of a Mechanism-Based, Personalized JITAI Coaching System for Physical Activity Maintenance in Adults with Overweight and Obesity</p><small>₩200,000,000 (~$135,000) · 5 years</small></div></article><article class="list-row reveal"><div class="list-date">2025</div><div><h4 data-en="Dr. Kenneth Harding Graduate Student Endowed Scholarship" data-ko="Dr. Kenneth Harding Graduate Student Endowed Scholarship">Dr. Kenneth Harding Graduate Student Endowed Scholarship</h4><p data-en="" data-ko=""></p><small>$1,000</small></div></article><article class="list-row reveal"><div class="list-date">2025</div><div><h4 data-en="Dissertation Completion Fellowship, MSU" data-ko="학위논문 완성 펠로우십, MSU">Dissertation Completion Fellowship, MSU</h4><p data-en="" data-ko=""></p><small>$7,000</small></div></article><article class="list-row reveal"><div class="list-date">2024</div><div><h4 data-en="Summer Research Fellowship, MSU" data-ko="하계 연구 펠로우십, MSU">Summer Research Fellowship, MSU</h4><p data-en="" data-ko=""></p><small>$7,000</small></div></article><article class="list-row reveal"><div class="list-date">2022</div><div><h4 data-en="Summer Research Development Fellowship, MSU" data-ko="하계 연구개발 펠로우십, MSU">Summer Research Development Fellowship, MSU</h4><p data-en="" data-ko=""></p><small>$6,000</small></div></article><article class="list-row reveal"><div class="list-date">2019</div><div><h4 data-en="Research Scholarship, CNU" data-ko="연구 장학금, 충남대">Research Scholarship, CNU</h4><p data-en="" data-ko=""></p><small>$5,400</small></div></article></section></section></div></div></section>
-<section class="contact-shell" id="contact"><div class="contact-grid"><div class="contact-copy reveal"><div class="contact-kicker" data-en="06 · Contact" data-ko="06 · 연락">06 · Contact</div><h2 data-en="Contact me" data-ko="연락하기">Contact me</h2><p data-en="For research collaboration, invited talks, methods consultation, or academic inquiries, feel free to send me a message." data-ko="공동연구, 특강, 연구방법론 자문 및 학술 관련 문의가 있으시면 편하게 메시지를 보내주세요.">For research collaboration, invited talks, methods consultation, or academic inquiries, feel free to send me a message.</p><div class="contact-direct"><a href="#" onclick="window.location.href='mai'+'lto:'+'haeyong'+'@'+'cnu.ac.kr';return false;">haeyong@cnu.ac.kr</a><a href="https://scholar.google.com/citations?user=J_Sjl9UAAAAJ&amp;hl=en" target="_blank">Google Scholar ↗</a><a href="https://github.com/haeyong520" target="_blank">GitHub ↗</a></div></div><form action="https://formspree.io/f/mjybjjnb" class="contact-form reveal" id="contactForm" method="POST"><input aria-hidden="true" autocomplete="off" class="hp-field" name="_gotcha" tabindex="-1" type="text"/><div class="form-row"><div class="field"><label data-en="Name" data-ko="이름" for="name">Name</label><input autocomplete="name" id="name" name="name" required="" type="text"/></div><div class="field"><label data-en="Email" data-ko="이메일" for="email">Email</label><input autocomplete="email" id="email" name="email" required="" type="email"/></div></div><div class="field"><label data-en="Subject" data-ko="제목" for="subject">Subject</label><input id="subject" name="subject" required="" type="text"/></div><div class="field"><label data-en="Message" data-ko="메시지" for="message">Message</label><textarea id="message" name="message" required=""></textarea></div><div class="send-row"><button class="send-btn" data-en="Send message →" data-ko="이메일 보내기 →" type="submit">Send message →</button><div class="form-note" data-en="Your message will be sent directly from this page." data-ko="작성한 메시지는 이 페이지에서 바로 전송됩니다.">Your message will be sent directly from this page.</div></div><div aria-live="polite" class="form-status" id="formStatus"></div></form></div></section>
+<section class="contact-shell" id="contact"><div class="contact-grid"><div class="contact-copy reveal"><div class="contact-kicker" data-en="06 · Contact" data-ko="06 · 연락">06 · Contact</div><h2 data-en="Contact me" data-ko="연락하기">Contact me</h2><p data-en="For research collaboration, invited talks, methods consultation, or academic inquiries, feel free to send me a message." data-ko="공동연구, 특강, 연구방법론 자문 및 학술 관련 문의가 있으시면 편하게 메시지를 보내주세요.">For research collaboration, invited talks, methods consultation, or academic inquiries, feel free to send me a message.</p><div class="contact-direct"><a href="#" onclick="window.location.href='mai'+'lto:'+'haeyong'+'@'+'cnu.ac.kr';return false;">haeyong@cnu.ac.kr</a><a href="https://scholar.google.com/citations?user=J_Sjl9UAAAAJ&amp;hl=en" target="_blank">Google Scholar ↗</a><a href="https://github.com/haeyong520" target="_blank">GitHub ↗</a></div></div><form action="https://formspree.io/f/mjybjjnb" class="contact-form reveal" id="contactForm" method="POST"><input aria-hidden="true" autocomplete="off" class="hp-field" name="_gotcha" tabindex="-1" type="text"/><div class="form-row"><div class="field"><label data-en="Name" data-ko="이름" for="name">Name</label><input autocomplete="name" data-fs-field="" id="name" name="name" required="" type="text"/></div><div class="field"><label data-en="Email" data-ko="이메일" for="email">Email</label><input autocomplete="email" data-fs-field="" id="email" name="email" required="" type="email"/><span aria-live="polite" class="fs-field-error" data-fs-error="email"></span></div></div><div class="field"><label data-en="Subject" data-ko="제목" for="subject">Subject</label><input data-fs-field="" id="subject" name="subject" required="" type="text"/></div><div class="field"><label data-en="Message" data-ko="메시지" for="message">Message</label><textarea data-fs-field="" id="message" name="message" required=""></textarea><span aria-live="polite" class="fs-field-error" data-fs-error="message"></span></div><div class="send-row"><button class="send-btn" data-en="Send message →" data-fs-submit-btn="" data-ko="이메일 보내기 →" type="submit"><span class="send-idle" data-en="Send message →" data-ko="메시지 보내기 →">Send message →</span><span class="send-loading" data-en="Sending…" data-ko="전송 중…">Sending…</span></button><div class="form-note" data-en="Your message will be sent directly from this page." data-ko="작성한 메시지는 이 페이지에서 바로 전송됩니다.">Your message will be sent directly from this page.</div></div>
+<div aria-live="polite" class="fs-feedback">
+<div class="form-status fs-success" data-en="✓ Message sent successfully. Thank you for reaching out." data-fs-success="" data-ko="✓ 메시지가 전송되었습니다. 연락해 주셔서 감사합니다.">
+    ✓ Message sent successfully. Thank you for reaching out.
+  </div>
+<div class="form-status fs-error" data-en="Message could not be sent. Please check the fields and try again." data-fs-error="" data-ko="메시지를 전송하지 못했습니다. 입력 내용을 확인한 후 다시 시도해 주세요.">
+    Message could not be sent. Please check the fields and try again.
+  </div>
+</div>
+</form></div></section>
 <button aria-label="Back to top" class="back-to-top" id="backToTop" title="Back to top" type="button">
 <span aria-hidden="true">↑</span>
 </button><footer class="footer" data-en="© 2026 Haeyong Chun. All rights reserved." data-ko="© 2026 전해용 · 모든 권리 보유">© 2026 Haeyong Chun. All rights reserved.</footer>
-<script>
-const nav=document.getElementById('siteNav');
+<script>const nav=document.getElementById('siteNav');
 const backToTop=document.getElementById('backToTop');
 window.addEventListener('scroll',()=>{
   nav.classList.toggle('scrolled',scrollY>24);
@@ -146,57 +174,12 @@ const revealObs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)
 let lang=localStorage.getItem('hc_language')||'en';const enBtn=document.getElementById('langEn'),koBtn=document.getElementById('langKo');
 function applyLanguage(next){lang=next;document.documentElement.lang=lang==='ko'?'ko':'en';document.querySelectorAll('[data-en][data-ko]').forEach(el=>{el.textContent=el.dataset[lang]});enBtn.classList.toggle('active',lang==='en');koBtn.classList.toggle('active',lang==='ko');localStorage.setItem('hc_language',lang);}
 enBtn.addEventListener('click',()=>applyLanguage('en'));koBtn.addEventListener('click',()=>applyLanguage('ko'));applyLanguage(lang);
-document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const f=btn.dataset.filter;document.querySelectorAll('.pub-row').forEach(r=>r.style.display=(f==='all'||r.dataset.type===f)?'':'none')}));
-document.getElementById('contactForm').addEventListener('submit', async e=>{
-  e.preventDefault();
-
-  const form=e.currentTarget;
-  const sendBtn=form.querySelector('.send-btn');
-  const status=document.getElementById('formStatus');
-  const originalText=sendBtn.textContent;
-
-  if(!form.reportValidity()) return;
-
-  sendBtn.disabled=true;
-  sendBtn.textContent=lang==='ko'?'전송 중…':'Sending…';
-  status.className='form-status';
-  status.textContent=lang==='ko'?'메시지를 전송하고 있습니다…':'Sending your message…';
-
-  try{
-    const response=await fetch(form.action,{
-      method:'POST',
-      body:new FormData(form),
-      headers:{'Accept':'application/json'}
-    });
-
-    if(response.ok){
-      form.reset();
-      status.className='form-status success';
-      status.textContent=lang==='ko'
-        ?'✓ 메시지가 전송되었습니다. 연락해 주셔서 감사합니다.'
-        :'✓ Message sent successfully. Thank you for reaching out.';
-      sendBtn.textContent=lang==='ko'?'전송 완료 ✓':'Message sent ✓';
-      setTimeout(()=>{
-        sendBtn.textContent=lang==='ko'?'메시지 보내기 →':'Send message →';
-      },2500);
-    }else{
-      let message='';
-      try{
-        const data=await response.json();
-        if(data && data.errors){
-          message=data.errors.map(error=>error.message).join(', ');
-        }
-      }catch(_){}
-      throw new Error(message || 'Form submission failed.');
-    }
-  }catch(error){
-    status.className='form-status error';
-    status.textContent=lang==='ko'
-      ?'메시지를 전송하지 못했습니다. 잠시 후 다시 시도하거나 이메일로 직접 연락해 주세요.'
-      :'Message could not be sent. Please try again or contact me directly by email.';
-    sendBtn.textContent=originalText;
-  }finally{
-    sendBtn.disabled=false;
-  }
+document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const f=btn.dataset.filter;document.querySelectorAll('.pub-row').forEach(r=>r.style.display=(f==='all'||r.dataset.type===f)?'':'none')}));</script><script>
+window.formspree = window.formspree || function () {
+  (formspree.q = formspree.q || []).push(arguments);
+};
+formspree('initForm', {
+  formElement: '#contactForm',
+  formId: 'mjybjjnb'
 });
-</script></body></html>
+</script><script defer="" src="https://unpkg.com/@formspree/ajax@1"></script></body></html>
